@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.gm-widget {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.gm-title-bar {
+    /*background color*/
+    background: #e5e696; /* Old browsers */
+    background: -moz-linear-gradient(left, #F0F0DB 0%, #BEBF9F 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #F0F0DB 0%, #BEBF9F 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #F0F0DB 0%, #BEBF9F 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F0DB', endColorstr='#BEBF9F', GradientType=1); /* IE6-9 */
+    /*border*/
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    /*height*/
+    height: 61px;
+    /*flex*/
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    cursor: pointer;
+}
+
+.gm-title-bar .left {
+    width: 50%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.gm-title-bar .icon {
+    margin-left: 23px;
+    margin-right: 10px;
+}
+
+.gm-title-bar .content {
+    width: auto;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.gm-title-bar .right {
+    width: 50%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    margin-right: 20px;
+}
+
+/*Body*/
+
+.gm-body {
+    /*box shadow*/
+    box-shadow: 3px 4px 3px #EAEBEB;
+    -moz-box-shadow: 3px 4px 3px #EAEBEB;
+    -webkit-box-shadow: 3px 4px 3px #EAEBEB;
+
+    /*border*/
+    border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+}
+
+/*Content*/
+
+.gm-content {
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    min-height: 200px;
+}
+
+.gm-content img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.gm-content .image-content {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.gm-content .description {
+    width: 60%;
+    /*height: 100px;*/
+    text-align: left;
+    margin-left: 10px;
+}
+
+.gm-content .description p {
+    margin-bottom: 10px;
+    color: #040404;
+    line-height: 1.5;
+}
+
+/*Footer*/
+
+.gm-footer-bar {
+    display: -webkit-flex;
+    display: flex;
+    border-top: 1px solid #EAEBEB;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/*Footer - left*/
+.gm-footer-bar .left {
+    width: 50%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.gm-footer-bar .left .label {
+    margin-left: 20px;
+    text-decoration: underline;
+    color: #488109;
+}
+
+/*Footer - right*/
+.gm-footer-bar .right {
+    width: 50%;
+    text-align: right;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.gm-footer-bar .right .question {
+    margin-right: 20px;
+    color: #488109;
+    text-decoration: underline;
+}
+
+/*shared*/
+.arrow.up {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #488109;
+}
+
+.arrow.down {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #488109;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 11px solid #488109;
+    display: inline-block;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+
+    border-right: 11px solid #488109;
+    display: inline-block;
+}
+
+/*Bookmark icon*/
+
+.bookmark {
+    width: 18px;
+    height: 22px;
+}
+
+.bookmark .top {
+    width: 18px;
+    height: 10px;
+}
+
+.bookmark .top-left {
+    width: 50%;
+    height: 100%;
+    background: #488109;
+    float: left;
+}
+
+.bookmark .top-right {
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #488109;
+    border-right: 7px solid transparent;
+    float: right;
+}
+
+.bookmark .bottom {
+    width: 18px;
+    height: 12px;
+    background-color: #488109;
+}
